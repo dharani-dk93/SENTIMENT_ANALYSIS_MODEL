@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Sentiment Analysis</h1>
+    <p class="subtitle">Analyze emotions from text using AI</p>
+
+    <textarea id="textInput" placeholder="Enter sentences (one per line)..."></textarea>
+
+    <button onclick="analyzeSentiment()">Analyze Sentiment</button>
+
+    <div id="result" class="result hidden">
+        <h2>Results</h2>
+        <div class="cards">
+            <div class="card positive">Positive<br><span id="positive">0</span></div>
+            <div class="card neutral">Neutral<br><span id="neutral">0</span></div>
+            <div class="card negative">Negative<br><span id="negative">0</span></div>
+        </div>
+        <div class="rating">⭐ Rating: <span id="rating">0</span> / 5</div>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
